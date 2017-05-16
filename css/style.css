@@ -6,15 +6,35 @@ svg
     }
     body
     {
-      background-color:  #737373;
+      background-color:  #b3f0ff;
     }
     h1
     {
       text-align: center;
-      color: white;
+      color: black;
     }
     .axis path,.axis line
     {
        fill: #ffc266;
        stroke: #b36b00;
     }
+
+    #back
+    {
+      width:100px;
+      height: 40px;
+      margin-left: 30px;
+      margin-top: 0;
+      border-radius: 5px;
+    }
+
+    header>button>a
+    {
+      text-decoration: none;
+
+    }
+    .tooltip
+    {
+      text-decoration: underline;
+    }
+   
