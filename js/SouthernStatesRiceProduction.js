@@ -3,14 +3,7 @@ var margin={top:80, bottom:100, left:150, right:90},
   width=1400-margin.left-margin.right,
   height=600-margin.top-margin.bottom;
 
-  // Append svg and g
-var svg=d3.select("body").append("svg")
-  .attr("width", width + margin.left + margin.right)
-  .attr("height", height + margin.top + margin.bottom)
-  .append("g")
-  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-// x and y Scale 
+  // x and y Scale 
   var xScale=d3.scale.ordinal().rangeRoundBands([0,width],0.12),
       yScale=d3.scale.linear().rangeRound([height,0]);
   var color = d3.scale.category10();
@@ -22,6 +15,15 @@ var svg=d3.select("body").append("svg")
   var yAxis=d3.svg.axis()
       .scale(yScale)
       .orient("left");
+
+  // Append svg and g
+var svg=d3.select("body").append("svg")
+  .attr("width", width + margin.left + margin.right)
+  .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
 
     // importing the JSON file 
   
